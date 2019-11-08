@@ -1,0 +1,6 @@
+[submodule "hash-tables-mchifala"]
+	path = hash-tables-mchifala
+	url = https://github.com/cu-swe4s-fall-2019/hash-tables-mchifala.git
+[submodule "a"]
+	path = a
+	url = https://github.com/swe4s/avl_tree
