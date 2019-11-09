@@ -91,6 +91,8 @@ python test_trees.py
 **Hash Random**
 ![](hash.png)
 
+In general, the BST performs better for both insertions and searches when the tree is balanced i.e. when the import is random. In fact, when the keys are inserted in sorted order, the BST becomes a long chain and degrades to array-like performance. The AVL tree improves upon the BST by self-balancing so we can be assured of good performance. The hash table's performances depends on the load factor; as the load factor increases, there are more collisions and the performance of insertions and searches decreases. The plots above reflect these insights.
+
 ## Authors
 
 **Michael W. Chifala** - University of Colorado, Boulder, CSCI 7000: Software Engineering for Scientists
