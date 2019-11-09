@@ -1,7 +1,11 @@
-dclass Node:
+import sys
+sys.setrecursionlimit(10**6)
+
+
+class Node:
     """
     This class serves as the nodes of a tree.
-    
+
     Attributes:
     - left(Node): the left child of the node
     - right(Node): the right child of the node
@@ -16,7 +20,8 @@ dclass Node:
         self.left = None
         self.right = None
         self.key = key
-        self.value  = value
+        self.value = value
+
 
 def insert(root, key, value=None):
     new_node = Node(key, value)
@@ -24,6 +29,7 @@ def insert(root, key, value=None):
         root = new_node
     else:
         insert_helper(root, new_node)
+
 
 def insert_helper(root, node):
     if root is None:
@@ -38,12 +44,15 @@ def insert_helper(root, node):
             root.left = node
         else:
             insert_helper(root.left, node)
-        
+
+
 def search(root, key):
     while root is not None and key != root.key:
         if key < root.key:
             root = root.left
         else:
             root = root.right
-            
-    return root.value
+    if root:
+        return root.value
+    else:
+        return None
