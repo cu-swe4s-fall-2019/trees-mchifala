@@ -75,16 +75,19 @@ python test_trees.py
 ### Benchmarking Results
 **AVL Sorted**
 ![](avl_sorted.png)
+
 **AVL Random**
 ![](avl.png)
 
 **BST Sorted**
 ![](bst_sorted.png)
+
 **BST Random**
 ![](bst.png)
 
 **Hash Sorted**
 ![](hash_sorted.png)
+
 **Hash Random**
 ![](hash.png)
 
